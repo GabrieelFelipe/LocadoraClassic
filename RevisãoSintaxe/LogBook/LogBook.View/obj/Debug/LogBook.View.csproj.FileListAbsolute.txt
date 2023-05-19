@@ -1,0 +1,17 @@
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\bin\Debug\LogBook.View.exe.config
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\bin\Debug\LogBook.View.exe
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\bin\Debug\LogBook.View.pdb
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.csproj.AssemblyReference.cache
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.csproj.SuggestedBindingRedirects.cache
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.Form1.resources
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.Properties.Resources.resources
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.csproj.GenerateResource.cache
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.exe
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.pdb
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.FrmAddStudent.resources
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.FrmDiarioDeBordo.resources
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\bin\Debug\LogBook.VO.dll
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\bin\Debug\LogBook.VO.pdb
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.csproj.CopyComplete
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.View\obj\Debug\LogBook.View.LoginView.resources

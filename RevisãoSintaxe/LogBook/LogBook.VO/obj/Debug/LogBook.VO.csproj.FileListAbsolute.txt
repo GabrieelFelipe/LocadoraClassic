@@ -1,0 +1,6 @@
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.VO\bin\Debug\LogBook.VO.dll
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.VO\bin\Debug\LogBook.VO.pdb
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.VO\obj\Debug\LogBook.VO.csproj.AssemblyReference.cache
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.VO\obj\Debug\LogBook.VO.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.VO\obj\Debug\LogBook.VO.dll
+C:\Users\ALUNO\source\repos\RevisãoSintaxe\LogBook\LogBook.VO\obj\Debug\LogBook.VO.pdb

@@ -1,0 +1,8 @@
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\bin\Debug\DojoDois.Exemplo.exe.config
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\bin\Debug\DojoDois.Exemplo.exe
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\bin\Debug\DojoDois.Exemplo.pdb
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\obj\Debug\DojoDois.Exemplo.csproj.AssemblyReference.cache
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\obj\Debug\DojoDois.Exemplo.csproj.SuggestedBindingRedirects.cache
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\obj\Debug\DojoDois.Exemplo.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\obj\Debug\DojoDois.Exemplo.exe
+C:\Users\ALUNO\source\repos\DojoDois\DojoDois.Exemplo\obj\Debug\DojoDois.Exemplo.pdb

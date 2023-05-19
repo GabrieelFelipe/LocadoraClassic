@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8663BC01-9773-45B6-BBBC-81BACBE97708}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Livraria.WindowsForms</RootNamespace>
+    <AssemblyName>Livraria.WindowsForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01ClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01ClienteForm.Designer.cs">
+      <DependentUpon>01ClienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03GeneroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03GeneroForm.Designer.cs">
+      <DependentUpon>03GeneroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CategoriaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CategoriaForm.Designer.cs">
+      <DependentUpon>02CategoriaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="01ClienteForm.resx">
+      <DependentUpon>01ClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CategoriaForm.resx">
+      <DependentUpon>02CategoriaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03GeneroForm.resx">
+      <DependentUpon>03GeneroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CategoriasLivraria\CategoriasLivraria.csproj">
+      <Project>{30b59082-d3a2-4f8e-866f-0f4a699f6d42}</Project>
+      <Name>CategoriasLivraria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClienteLivraria\ClienteLivraria.csproj">
+      <Project>{c53bfa45-f963-4faf-8642-3b21f24cdebb}</Project>
+      <Name>ClienteLivraria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneroLivraria\GeneroLivraria.csproj">
+      <Project>{7139293b-89f0-41df-a52d-ed75954b347a}</Project>
+      <Name>GeneroLivraria</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

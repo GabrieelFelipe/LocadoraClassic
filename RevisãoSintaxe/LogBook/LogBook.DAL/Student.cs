@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LogBook.DAL
+{
+    public class Student
+    {
+        //Orientação a objetos
+
+        //Classe
+        //Objeto
+        //Atributos
+        //Métodos
+
+        int id;
+        string
+    }
+}
