@@ -31,12 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dgvGeneros = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGeneros)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(172, 174);
+            this.label1.Location = new System.Drawing.Point(172, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -44,7 +46,7 @@
             // 
             // txtGenero
             // 
-            this.txtGenero.Location = new System.Drawing.Point(175, 193);
+            this.txtGenero.Location = new System.Drawing.Point(175, 41);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(435, 20);
             this.txtGenero.TabIndex = 1;
@@ -52,25 +54,38 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(175, 220);
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.Location = new System.Drawing.Point(175, 68);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(435, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dgvGeneros
+            // 
+            this.dgvGeneros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGeneros.Location = new System.Drawing.Point(175, 135);
+            this.dgvGeneros.Name = "dgvGeneros";
+            this.dgvGeneros.Size = new System.Drawing.Size(435, 191);
+            this.dgvGeneros.TabIndex = 3;
+            this.dgvGeneros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // FrmTelaGenero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvGeneros);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtGenero);
             this.Controls.Add(this.label1);
             this.Name = "FrmTelaGenero";
             this.Text = "Cadastro de Gênero";
             this.Load += new System.EventHandler(this.FrmTelaGenero_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGeneros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +96,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvGeneros;
     }
 }

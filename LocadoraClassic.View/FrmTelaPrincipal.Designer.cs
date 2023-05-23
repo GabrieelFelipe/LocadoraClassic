@@ -45,9 +45,9 @@
             this.gráficosPizzaDeClientesPorEndereçoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficosPizzaDeClientesPorEndereçoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficoDeBarraDeAtradosPorMêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.xilften = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xilften)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -81,27 +81,27 @@
             // generoToolStripe
             // 
             this.generoToolStripe.Name = "generoToolStripe";
-            this.generoToolStripe.Size = new System.Drawing.Size(180, 26);
+            this.generoToolStripe.Size = new System.Drawing.Size(167, 26);
             this.generoToolStripe.Text = "Gênero";
             this.generoToolStripe.Click += new System.EventHandler(this.gêneroToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // filmeToolStripMenuItem
             // 
             this.filmeToolStripMenuItem.Name = "filmeToolStripMenuItem";
-            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.filmeToolStripMenuItem.Text = "Filme";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // locaçãoToolStripMenuItem
@@ -178,25 +178,26 @@
             this.gráficoDeBarraDeAtradosPorMêsToolStripMenuItem.Size = new System.Drawing.Size(379, 26);
             this.gráficoDeBarraDeAtradosPorMêsToolStripMenuItem.Text = "Gráfico de Barra de Atrados por Mês";
             // 
-            // pictureBox1
+            // xilften
             // 
-            this.pictureBox1.Image = global::LocadoraClassic.View.Properties.Resources.Design_sem_nome;
-            this.pictureBox1.Location = new System.Drawing.Point(198, 82);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(399, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.xilften.Image = global::LocadoraClassic.View.Properties.Resources.Design_sem_nome;
+            this.xilften.Location = new System.Drawing.Point(169, 132);
+            this.xilften.Name = "xilften";
+            this.xilften.Size = new System.Drawing.Size(454, 173);
+            this.xilften.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.xilften.TabIndex = 1;
+            this.xilften.TabStop = false;
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
+            this.BackgroundImage = global::LocadoraClassic.View.Properties.Resources.dark_red_color_solid_background_1920x1080;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.xilften);
             this.Controls.Add(this.menuStrip1);
-            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -210,7 +211,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xilften)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,7 +235,7 @@
         private System.Windows.Forms.ToolStripMenuItem faturamentoDoDiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gráficosPizzaDeClientesPorEndereçoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem gráficoDeBarraDeAtradosPorMêsToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox xilften;
     }
 }
 

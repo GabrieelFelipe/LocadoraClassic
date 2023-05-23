@@ -36,17 +36,28 @@ namespace LocadoraClassic.View
 
             //Limpar a caixa
             txtGenero.Text = "";
-            MessageBox.Show("Dado inserido!");
+            CarregarGrid();
+            MessageBox.Show("Genero inserido!");
 
             
         }
 
         private void FrmTelaGenero_Load(object sender, EventArgs e)
         {
+            CarregarGrid();
+        }
 
+        public void CarregarGrid()
+        {
+            dgvGeneros.DataSource = generoDAL.ObterGeneros().ToList();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

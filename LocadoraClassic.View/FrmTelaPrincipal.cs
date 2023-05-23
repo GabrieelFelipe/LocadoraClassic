@@ -33,6 +33,7 @@ namespace LocadoraClassic.View
             FrmTelaGenero frnTelaGenero = new FrmTelaGenero();
             frnTelaGenero.MdiParent = this;
             frnTelaGenero.Show();
+            xilften.Visible = false;
         }
 
         private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)

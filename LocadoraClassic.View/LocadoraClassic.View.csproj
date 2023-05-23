@@ -138,5 +138,8 @@
       <Name>LocadoraClassic.VO</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-red-color-solid-background-1920x1080.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
