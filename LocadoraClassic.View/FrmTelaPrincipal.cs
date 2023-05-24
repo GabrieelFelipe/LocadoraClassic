@@ -31,7 +31,7 @@ namespace LocadoraClassic.View
         {
             // Classe --- Objeto -------- Construtor.  Orientação a objetos ↓ 
             FrmTelaGenero frnTelaGenero = new FrmTelaGenero();
-            frnTelaGenero.MdiParent = this;
+            //frnTelaGenero.MdiParent = this;
             frnTelaGenero.Show();
             xilften.Visible = false;
         }
@@ -39,7 +39,7 @@ namespace LocadoraClassic.View
         private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmTelaCategoria frnTelaCategoria = new FrmTelaCategoria();
-            frnTelaCategoria.MdiParent = this;
+            //frnTelaCategoria.MdiParent = this;
             frnTelaCategoria.Show();
         }
     }

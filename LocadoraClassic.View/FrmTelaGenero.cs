@@ -49,7 +49,7 @@ namespace LocadoraClassic.View
 
         public void CarregarGrid()
         {
-            dgvGeneros.DataSource = generoDAL.ObterGeneros().ToList();
+            dgvGeneros.DataSource = new GeneroDAL().ObterGeneros().ToList();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -38,15 +38,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(172, 22);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(172, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(57, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
             // txtGenero
             // 
-            this.txtGenero.Location = new System.Drawing.Point(175, 41);
+            this.txtGenero.Location = new System.Drawing.Point(175, 74);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(435, 20);
             this.txtGenero.TabIndex = 1;
@@ -54,10 +56,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(175, 68);
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(175, 101);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(435, 23);
+            this.button1.Size = new System.Drawing.Size(435, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = false;
@@ -66,7 +70,7 @@
             // dgvGeneros
             // 
             this.dgvGeneros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGeneros.Location = new System.Drawing.Point(175, 135);
+            this.dgvGeneros.Location = new System.Drawing.Point(175, 163);
             this.dgvGeneros.Name = "dgvGeneros";
             this.dgvGeneros.Size = new System.Drawing.Size(435, 191);
             this.dgvGeneros.TabIndex = 3;
