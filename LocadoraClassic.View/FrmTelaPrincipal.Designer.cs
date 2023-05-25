@@ -81,28 +81,29 @@
             // generoToolStripe
             // 
             this.generoToolStripe.Name = "generoToolStripe";
-            this.generoToolStripe.Size = new System.Drawing.Size(167, 26);
+            this.generoToolStripe.Size = new System.Drawing.Size(180, 26);
             this.generoToolStripe.Text = "Gênero";
             this.generoToolStripe.Click += new System.EventHandler(this.gêneroToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // filmeToolStripMenuItem
             // 
             this.filmeToolStripMenuItem.Name = "filmeToolStripMenuItem";
-            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.filmeToolStripMenuItem.Text = "Filme";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // locaçãoToolStripMenuItem
             // 

@@ -23,7 +23,7 @@ namespace LocadoraClassic.DAL
 
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = "INSERT INTO categoria(diaria)values(@diaria)";
-            comando.Parameters.Add(new MySqlParameter("@diaria", categoria.Diaria));
+            comando.Parameters.Add(new MySqlParameter("diaria", categoria.Diaria));
             comando.ExecuteNonQuery();
             Conexao.Instance.Close();
         }
