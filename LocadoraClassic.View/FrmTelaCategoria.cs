@@ -17,6 +17,7 @@ namespace LocadoraClassic.View
         public FrmTelaCategoria()
         {
             InitializeComponent();
+            CarregarGrid();
         }
 
         private void FrmTelaCategoria_Load(object sender, EventArgs e)
@@ -33,13 +34,15 @@ namespace LocadoraClassic.View
             CategoriaDAL categoriadal = new CategoriaDAL();
 
             //Pegar o valor da caixinha e colocar na 
-            categoria.Nome = txtCategoria1.Text;
+            categoria.Nome = txtNome.Text;
+            categoria.Nome = txtDiaria.Text;
 
             //Inserir no Banco de dados
             categoriadal.InserirCategoria(categoria);
 
             //Limpar a caixa
-            txtCategoria1.Text = "";
+            txtNome.Text = "";
+            txtDiaria.Text = "";
             CarregarGrid();
             MessageBox.Show("Categoria inserida!");
         }
@@ -68,7 +71,7 @@ namespace LocadoraClassic.View
 
         private void FrmTelaCategoria_Load_1(object sender, EventArgs e)
         {
-            CarregarGrid();
+            
         }
     }
 }

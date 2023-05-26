@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCategoria1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtDiaria = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
@@ -59,21 +59,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Valor da Diária";
             // 
-            // txtCategoria1
+            // txtNome
             // 
-            this.txtCategoria1.Location = new System.Drawing.Point(244, 41);
-            this.txtCategoria1.Name = "txtCategoria1";
-            this.txtCategoria1.Size = new System.Drawing.Size(300, 20);
-            this.txtCategoria1.TabIndex = 2;
-            this.txtCategoria1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNome.Location = new System.Drawing.Point(244, 41);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(300, 20);
+            this.txtNome.TabIndex = 2;
+            this.txtNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtDiaria
             // 
-            this.textBox2.Location = new System.Drawing.Point(244, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtDiaria.Location = new System.Drawing.Point(244, 88);
+            this.txtDiaria.Name = "txtDiaria";
+            this.txtDiaria.Size = new System.Drawing.Size(300, 20);
+            this.txtDiaria.TabIndex = 3;
+            this.txtDiaria.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -105,8 +105,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtCategoria1);
+            this.Controls.Add(this.txtDiaria);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmTelaCategoria";
@@ -122,8 +122,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCategoria1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtDiaria;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvCategorias;
     }

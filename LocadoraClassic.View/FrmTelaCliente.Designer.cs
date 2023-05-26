@@ -34,10 +34,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCliente = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
+            this.maskedTxtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
@@ -107,35 +107,39 @@
             this.txtCliente.TabIndex = 5;
             this.txtCliente.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtEndereco
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(576, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtEndereco.Location = new System.Drawing.Point(105, 89);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(576, 20);
+            this.txtEndereco.TabIndex = 6;
+            this.txtEndereco.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtRg
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 233);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(576, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtRg.Location = new System.Drawing.Point(105, 233);
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(576, 20);
+            this.txtRg.TabIndex = 7;
+            this.txtRg.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // maskedTextBox1
+            // maskedTxtTelefone
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(105, 137);
-            this.maskedTextBox1.Mask = "(00) 0 0000-0000 ";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(576, 20);
-            this.maskedTextBox1.TabIndex = 8;
+            this.maskedTxtTelefone.Location = new System.Drawing.Point(105, 137);
+            this.maskedTxtTelefone.Mask = "(00) 0 0000-0000 ";
+            this.maskedTxtTelefone.Name = "maskedTxtTelefone";
+            this.maskedTxtTelefone.Size = new System.Drawing.Size(576, 20);
+            this.maskedTxtTelefone.TabIndex = 8;
+            this.maskedTxtTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // maskedTextBox2
+            // maskedTxtCpf
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(105, 185);
-            this.maskedTextBox2.Mask = "000.000.000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(576, 20);
-            this.maskedTextBox2.TabIndex = 9;
+            this.maskedTxtCpf.Location = new System.Drawing.Point(105, 185);
+            this.maskedTxtCpf.Mask = "000.000.000-00";
+            this.maskedTxtCpf.Name = "maskedTxtCpf";
+            this.maskedTxtCpf.Size = new System.Drawing.Size(576, 20);
+            this.maskedTxtCpf.TabIndex = 9;
+            this.maskedTxtCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // button1
             // 
@@ -167,10 +171,10 @@
             this.ClientSize = new System.Drawing.Size(800, 519);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.maskedTxtCpf);
+            this.Controls.Add(this.maskedTxtTelefone);
+            this.Controls.Add(this.txtRg);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -194,10 +198,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.TextBox txtRg;
+        private System.Windows.Forms.MaskedTextBox maskedTxtTelefone;
+        private System.Windows.Forms.MaskedTextBox maskedTxtCpf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvClientes;
     }

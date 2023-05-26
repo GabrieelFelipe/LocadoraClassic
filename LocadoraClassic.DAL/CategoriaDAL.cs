@@ -1,13 +1,11 @@
 ﻿using LocadoraClassic.VO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
+using System;
 
 namespace LocadoraClassic.DAL
 {
+
     public class CategoriaDAL
     {
         public void InserirCategoria(Categoria categoria)
@@ -22,8 +20,10 @@ namespace LocadoraClassic.DAL
             //ADO.NET - biblioteca de banco de dados do .NET
 
             comando.CommandType = System.Data.CommandType.Text;
-            comando.CommandText = "INSERT INTO categoria(diaria)values(@diaria)";
+            comando.CommandText = "INSERT INTO categoria(nome,diaria)values(@diaria,@diaria)";
+            comando.Parameters.Add(new MySqlParameter("nome", categoria.Nome));
             comando.Parameters.Add(new MySqlParameter("diaria", categoria.Diaria));
+
             comando.ExecuteNonQuery();
             Conexao.Instance.Close();
         }
@@ -44,6 +44,7 @@ namespace LocadoraClassic.DAL
                 Categoria categoria = new Categoria();
                 categoria.Id = Convert.ToInt32(reader["id"]);
                 categoria.Nome = reader["nome"].ToString();
+                categoria.Diaria = reader["diaria"].ToString();
                 categorias.Add(categoria);
             }
             // Fechar a conexão e retornar os gêneros obtidos

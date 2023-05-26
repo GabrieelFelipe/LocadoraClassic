@@ -1,14 +1,11 @@
 ﻿using LocadoraClassic.VO;
-using MySqlX.XDevAPI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
+using System;
 
 namespace LocadoraClassic.DAL
 {
+
     public class ClienteDAL
     {
         public void InserirCliente(Cliente cliente)
