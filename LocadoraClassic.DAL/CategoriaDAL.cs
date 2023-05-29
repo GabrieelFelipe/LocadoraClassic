@@ -20,7 +20,7 @@ namespace LocadoraClassic.DAL
             //ADO.NET - biblioteca de banco de dados do .NET
 
             comando.CommandType = System.Data.CommandType.Text;
-            comando.CommandText = "INSERT INTO categoria(nome,diaria)values(@diaria,@diaria)";
+            comando.CommandText = "INSERT INTO categoria(nome,diaria)values(@nome,@diaria)";
             comando.Parameters.Add(new MySqlParameter("nome", categoria.Nome));
             comando.Parameters.Add(new MySqlParameter("diaria", categoria.Diaria));
 

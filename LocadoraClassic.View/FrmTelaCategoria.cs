@@ -35,7 +35,7 @@ namespace LocadoraClassic.View
 
             //Pegar o valor da caixinha e colocar na 
             categoria.Nome = txtNome.Text;
-            categoria.Nome = txtDiaria.Text;
+            categoria.Diaria = txtDiaria.Text;
 
             //Inserir no Banco de dados
             categoriadal.InserirCategoria(categoria);
