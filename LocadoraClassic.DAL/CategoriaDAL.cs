@@ -52,5 +52,39 @@ namespace LocadoraClassic.DAL
             Conexao.Instance.Close();
             return categorias;
         }
+
+        public void AtualizarCategoria(Categoria categoria)
+        {
+            // Abrir a Conexão
+            Conexao.Instance.Open();
+
+            // MySqlCommand
+            MySqlCommand comando = Conexao.Instance.CreateCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "UPDATE categoria SET nome = @nome,diaria = @diaria WHERE id = @id";
+            comando.Parameters.AddWithValue("@nome", categoria.Nome);
+            comando.Parameters.AddWithValue("@id", categoria.Id);
+            comando.Parameters.AddWithValue("@diaria", categoria.Diaria);
+            comando.ExecuteNonQuery();
+
+            // Fechar a conexão
+            Conexao.Instance.Close();
+        }
+
+        public void ExcluirCategoria(int id)
+        {
+            // Abrir a Conexão
+            Conexao.Instance.Open();
+
+            // MySqlCommand
+            MySqlCommand comando = Conexao.Instance.CreateCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "DELETE FROM categoria WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
+            comando.ExecuteNonQuery();
+
+            // Fechar a conexão
+            Conexao.Instance.Close();
+        }
     }
 }
