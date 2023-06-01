@@ -73,7 +73,35 @@ namespace LocadoraClassic.View
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            if (e.RowIndex >= 0)
+            {
+                // Obtém a linha em que ocorreu o duplo clique
+                DataGridViewRow row = dgvCategorias.Rows[e.RowIndex];
+
+                // Seleciona a linha inteira
+                row.Selected = true;
+            }
+
+            //ETAPA 1 - SELECIONAR O ID DA TABELA
+
+            // Verifica se há alguma linha selecionada no DataGridView
+            if (dgvCategorias.SelectedRows.Count > 0)
+            {
+                // Obtém a linha selecionada
+                DataGridViewRow selectedRow = dgvCategorias.SelectedRows[0];
+
+                // Obtém o valor do campo "id" da célula selecionada
+                int id = 0;
+                id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+                string nome = selectedRow.Cells["Nome"].Value.ToString();
+                txtNome.Text = nome;
+                string diaria = selectedRow.Cells["Diaria"].Value.ToString();
+                txtDiaria.Text = diaria;
+
+
+                // Faça o que precisar com o valor do campo "id"
+                // Por exemplo, exiba-o em uma caixa de diálogo
+            }
         }
 
         private void FrmTelaCategoria_Load_1(object sender, EventArgs e)
@@ -86,11 +114,14 @@ namespace LocadoraClassic.View
             categoria.Nome = txtNome.Text;
             categoria.Diaria = txtDiaria.Text;
             categoria.Id = id;
+
             categoriaDAL.AtualizarCategoria(categoria);
+
             txtNome.Text = "";
             txtDiaria.Text = "";
             CarregarGrid();
-            
+            MessageBox.Show("Categoria atualizada!");
+
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -121,39 +152,7 @@ namespace LocadoraClassic.View
 
         private void dgvCategorias_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                // Obtém a linha em que ocorreu o duplo clique
-                DataGridViewRow row = dgvCategorias.Rows[e.RowIndex];
 
-                // Seleciona a linha inteira
-                row.Selected = true;
-            }
-
-            //ETAPA 1 - SELECIONAR O ID DA TABELA
-
-            // Verifica se há alguma linha selecionada no DataGridView
-            if (dgvCategorias.SelectedRows.Count > 0)
-            {
-                // Obtém a linha selecionada
-                DataGridViewRow selectedRow = dgvCategorias.SelectedRows[0];
-
-                // Obtém o valor do campo "id" da célula selecionada
-                int id = 0;
-                id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
-                string nome = selectedRow.Cells["Nome"].Value.ToString();
-                txtNome.Text = nome;
-                string diaria = selectedRow.Cells["Diaria"].Value.ToString();
-                txtDiaria.Text = diaria;
-                CarregarGrid();
-                MessageBox.Show("Categoria atualizada!");
-
-                // Faça o que precisar com o valor do campo "id"
-                // Por exemplo, exiba-o em uma caixa de diálogo
-
-
-            }
-            
         }
 
     }

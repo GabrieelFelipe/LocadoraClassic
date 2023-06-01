@@ -58,5 +58,43 @@ namespace LocadoraClassic.DAL
             Conexao.Instance.Close();
             return clientes;
         }
+
+        public void ExcluirCliente(int id)
+        {
+            // Abrir a Conexão
+            Conexao.Instance.Open();
+
+            // MySqlCommand
+            MySqlCommand comando = Conexao.Instance.CreateCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "DELETE FROM cliente WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
+            comando.ExecuteNonQuery();
+
+            // Fechar a conexão
+            Conexao.Instance.Close();
+        }
+    
+
+        public void AtualizarCliente(Cliente cliente)
+        {
+            // Abrir a Conexão
+            Conexao.Instance.Open();
+
+            // MySqlCommand
+            MySqlCommand comando = Conexao.Instance.CreateCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "UPDATE cliente SET nome = @nome,endereco = @endereco,telefone = @telefone,CPF = @CPF,RG = @RG WHERE id = @id";
+            comando.Parameters.AddWithValue("@nome", cliente.Nome);
+            comando.Parameters.AddWithValue("@id", cliente.Id);
+            comando.Parameters.AddWithValue("@endereco", cliente.Endereco);
+            comando.Parameters.AddWithValue("@telefone", cliente.Telefone);
+            comando.Parameters.AddWithValue("@CPF", cliente.CPF);
+            comando.Parameters.AddWithValue("@RG", cliente.RG);
+            comando.ExecuteNonQuery();
+
+            // Fechar a conexão
+            Conexao.Instance.Close();
+        }
     }
 }
