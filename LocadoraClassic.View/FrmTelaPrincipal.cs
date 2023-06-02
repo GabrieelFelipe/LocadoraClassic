@@ -49,5 +49,12 @@ namespace LocadoraClassic.View
             //frnTelaCategoria.MdiParent = this;
             frnTelaCliente.Show();
         }
+
+        private void filmeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTelaFilme frnTelaFilme = new FrmTelaFilme();
+            //frnTelaCategoria.MdiParent = this;
+            frnTelaFilme.Show();
+        }
     }
 }

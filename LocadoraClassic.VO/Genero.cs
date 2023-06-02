@@ -31,5 +31,10 @@ namespace LocadoraClassic.VO
         }
 
 
+        public override string ToString()
+        {
+            return Nome;
+        }
+
     }
 }

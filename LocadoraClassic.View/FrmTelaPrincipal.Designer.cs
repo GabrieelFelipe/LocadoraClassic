@@ -97,6 +97,7 @@
             this.filmeToolStripMenuItem.Name = "filmeToolStripMenuItem";
             this.filmeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.filmeToolStripMenuItem.Text = "Filme";
+            this.filmeToolStripMenuItem.Click += new System.EventHandler(this.filmeToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
